@@ -14,31 +14,53 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
-  outline: 2px solid tomato;
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 ul {
   margin: 0;
   padding-left: 0;
 }
-p .list {
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+}
+.list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+.conteiner {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid #4d5ae5;
+}
 /*------Header-------*/
 .header {
   background: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-conteiner {
+  display: flex;
 }
 .header-navigation {
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 .span-header-logo {
   font-family: "Raleway", sans-serif;
@@ -53,6 +75,7 @@ p .list {
   color: var(--logo-akcent-color);
 }
 .header-logo {
+  margin-right: 76px;
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
@@ -64,6 +87,8 @@ p .list {
   color: #2e2f42;
 }
 .header-list {
+  display: flex;
+  gap: 40px;
 }
 .header-item {
   font-weight: 500;
@@ -88,6 +113,8 @@ p .list {
 .adress {
 }
 .adress-list {
+  display: flex;
+  gap: 40px;
 }
 .adress-item {
   font-style: normal;
@@ -124,15 +151,26 @@ p .list {
 /*------Hero-------*/
 .hero {
   background: #2e2f42;
+  outline: 2px solid rgb(71, 255, 197);
+  text-align: center;
 }
 .hero-title {
+  display: inline-block;
+  min-width: 494px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  outline: 2px solid #ffffff;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 .hero-btn {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  outline: 2px solid rgb(255, 71, 224);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -142,6 +180,9 @@ p .list {
   cursor: pointer;
   color: #ffffff;
   background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -149,9 +190,12 @@ p .list {
 }
 /*-----information--------*/
 .information {
+  padding-top: 120px;
+  outline: 2px solid rgb(71, 255, 197);
   background: #e5e5e5;
 }
 .hidden {
+  outline: 2px solid rgb(175, 71, 255);
 }
 .information-list {
 }
@@ -164,6 +208,7 @@ p .list {
   letter-spacing: 0.02em;
 }
 .information-desc {
+  margin-top: 8px;
   font-size: var(--paragraph-fontsize);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -172,9 +217,13 @@ p .list {
 }
 /*-----Doing--------*/
 .doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  outline: 2px solid rgb(255, 71, 187);
   background: #e5e5e5;
 }
 .doing-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -187,9 +236,13 @@ p .list {
 }
 /*-----Team--------*/
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  outline: 2px solid rgb(206, 255, 71);
   background: #f4f4fd;
 }
 .team-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -208,6 +261,7 @@ p .list {
   letter-spacing: 0.02em;
 }
 .team-position {
+  margin-top: 8px;
   font-size: var(--paragraph-fontsize);
   line-height: 1.5;
   text-align: center;
@@ -217,6 +271,7 @@ p .list {
 }
 /*-----Footer--------*/
 .footer {
+  outline: 2px solid tomato;
   background: #2e2f42;
 }
 .footer-logo {
@@ -231,6 +286,7 @@ p .list {
   color: #f4f4fd;
 }
 .footer-tagline {
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -250,9 +306,14 @@ p .list {
 }
 /*-----portfolio----*/
 .main-portfolio {
+  outline: 2px solid tomato;
   background: #e5e5e5;
 }
 .portfolio-btn {
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -264,6 +325,8 @@ p .list {
   /* IRIS */
   color: #4d5ae5;
   background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -281,4 +344,9 @@ p .list {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+.portfolio-borders {
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
