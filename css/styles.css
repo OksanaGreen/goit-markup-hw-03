@@ -40,8 +40,16 @@ img {
 .link {
   text-decoration: none;
 }
+.conteiner-hero {
+  width: 1158px;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid #4d5ae5;
+}
 .conteiner {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -51,23 +59,21 @@ img {
 /*------Header-------*/
 .header {
   background: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-conteiner {
+  padding: 24px 15px;
   display: flex;
 }
 .header-navigation {
   display: flex;
   align-items: center;
-  margin: auto;
 }
 .span-header-logo {
+  padding-left: 156px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -80,7 +86,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -111,12 +116,14 @@ img {
 }
 /*------Adress-------*/
 .adress {
+  padding-right: 156px;
+  padding-left: 332px;
 }
 .adress-list {
   display: flex;
-  gap: 40px;
 }
 .adress-item {
+  padding: 10px 10px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -156,10 +163,9 @@ img {
 }
 .hero-title {
   display: inline-block;
-  min-width: 494px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
   outline: 2px solid #ffffff;
   font-size: 56px;
   line-height: 1.07;
@@ -167,6 +173,7 @@ img {
   color: #ffffff;
 }
 .hero-btn {
+  margin-top: 48px;
   margin-right: auto;
   margin-left: auto;
   display: inline-block;
@@ -183,6 +190,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  border: 1px solid transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -198,6 +207,11 @@ img {
   outline: 2px solid rgb(175, 71, 255);
 }
 .information-list {
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  display: flex;
+  gap: 24px;
 }
 .information-item {
 }
@@ -208,6 +222,7 @@ img {
   letter-spacing: 0.02em;
 }
 .information-desc {
+  min-width: 264px;
   margin-top: 8px;
   font-size: var(--paragraph-fontsize);
   line-height: 1.5;
@@ -217,8 +232,8 @@ img {
 }
 /*-----Doing--------*/
 .doing {
-  padding-top: 120px;
   padding-bottom: 120px;
+  padding-top: 120px;
   outline: 2px solid rgb(255, 71, 187);
   background: #e5e5e5;
 }
@@ -231,6 +246,10 @@ img {
   text-transform: capitalize;
 }
 .doing-list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .doing-item {
 }
@@ -250,10 +269,16 @@ img {
   text-transform: capitalize;
 }
 .team-list {
+  justify-content: center;
+  padding-bottom: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .team-item {
 }
 .team-name {
+  padding-top: 32px;
   font-weight: var(--main-title-fontweight);
   font-size: 20px;
   line-height: 1.2;
@@ -261,6 +286,7 @@ img {
   letter-spacing: 0.02em;
 }
 .team-position {
+  padding-bottom: 32px;
   margin-top: 8px;
   font-size: var(--paragraph-fontsize);
   line-height: 1.5;
@@ -310,14 +336,16 @@ img {
   background: #e5e5e5;
 }
 .portfolio-btn {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 48px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  padding: 12px 24px;
-  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -325,8 +353,6 @@ img {
   /* IRIS */
   color: #4d5ae5;
   background: #f4f4fd;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -334,8 +360,16 @@ img {
   background: #4d5ae5;
 }
 .portfolio-list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-list-btn {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-examples {
 }
