@@ -70,6 +70,8 @@ img {
 }
 /*------Header-------*/
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
   background: #ffffff;
 }
@@ -133,9 +135,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 40px;
 }
 .adress-item {
-  padding: 10px 10px;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -343,16 +345,14 @@ img {
 }
 /*-----portfolio----*/
 .portfolio {
-  padding-top: 72px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 .main-portfolio {
   outline: 2px solid tomato;
 }
 .portfolio-btn {
-  margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 12px 24px;
   min-height: 48px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
@@ -380,6 +380,7 @@ img {
   gap: 24px;
 }
 .portfolio-list-btn {
+  margin-bottom: 72px;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
